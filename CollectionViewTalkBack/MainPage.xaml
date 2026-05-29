@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CollectionViewTalkBack.MainPage">
+
+    <CollectionView Margin="16">
+        <CollectionView.Header>
+            <VerticalStackLayout Spacing="8"
+                                 Margin="0 ,0, 0, 16">
+                <Label Text="Collection Title"
+                       FontSize="24"/>
+                <Label Text="Collection Subtitle"/>
+            </VerticalStackLayout>
+        </CollectionView.Header>
+        <CollectionView.EmptyView>
+            <Label Text="There is nothing to see here!"
+                   FontSize="24"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Fill"
+                   VerticalTextAlignment="Center"
+                   VerticalOptions="Fill"/>
+        </CollectionView.EmptyView>
+        <CollectionView.Footer>
+            <Label Text="Footer"
+                   Margin="0, 16, 0, 0"/>
+        </CollectionView.Footer>
+    </CollectionView>
+
+</ContentPage>
